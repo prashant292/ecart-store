@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav{
+    
+    display: flex;
+    margin:0px 8% 2% 8%;
+    justify-content: space-between;
+    text-align: center;
+    width: 84%;
+}
+.nav_item{
+    margin-top: 20px;
+    cursor: pointer;
+}
+.nav_item img{
+    width: 64px;
+    transition: all 0.3s;
+}
+.nav_item img:hover{
+    scale: 1.1;
+}
+.nav_item p{
+    
+    font-size: 14px;
+    font-weight: 600;
+}
+.home{
+    margin-top: 55px;
+}
+.bg{
+    background-color: rgb(238, 238, 238);
+}
+.carousel{
+    padding: 5px;
+    width: 100%;
+    height: 240px;
+}
+
+.product-div{
+    background-color: white;
+    padding: 10px 0px;
+    margin: 20px 5px;
+    
+}
+.product-div .timer{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    border-bottom: 1px solid gray;
+    padding-bottom: 5px;
+}
+.product-div .count-down{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+.product-div .count-down h2{
+    color: rgb(51, 51, 51);
+}
+.product-div .count-down img{
+    margin-left: 20px;
+}
+.product-div .timer button{
+    padding: 8px 20px;
+    color: white;
+    background-color: rgb(2, 157, 74);
+    margin-right: 25px;
+    border-radius: 1px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.products{
+    /* padding: 10px; */
+    text-align: center;
+    cursor: pointer;
+    margin: 10px;
+   
+}
+
+.products .desc{
+    font-weight: 600;
+}
+.products .discount{
+    color: rgb(2, 157, 74);
+}
+.products .tagline{
+    color: rgb(162, 162, 162);
+    font-size: 15px;
+}
+.prdt-img{
+    width: 160px;
+    height: 170px;
+    padding: 5px;
+}
+.prdt-img:hover{
+    scale: 1.03;
+}
+.midslide{
+    display: flex;
+    align-items: center;
+
+}
+.midslide .mid-slide{
+    width: 85%;
+}
+.midslide .mid-img{
+    width: 98%;
+    height: 325px;
+}
+.mid{
+    padding: 5px;
+    background-color: white;
+}
+.midsection{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+.midsection img{
+    width: 100%;
+}
+
+
+
+@media screen and (max-width:850px){
+    .midsection{
+        grid-template-columns: 1fr;
+        gap: 5px 0px;
+    }
+    .nav{
+        margin:0px 3% 2% 3%;
+        overflow-x: scroll;
+        width: 94%;
+        padding-bottom: 10px;
+    }
+    .nav_item img{
+        width: 50px;
+        transition: all 0.3s;
+    }
+    .nav_item img:hover{
+        scale: 1.05;
+    }
+    .nav_item p{
+        font-size: 12px;
+    }
+    .mid{
+        display: none;
+    }
+    .midslide .mid-slide{
+        width: 100%;
+    }
+    .carousel{
+        object-fit: cover;
+        height: 180px;
+    }
+    .side-img{
+        height: 180px;
+    }
+    .home{
+        margin-top: 125px;
+    }
+
+}
+@media screen and (max-width:450px){
+    .count-down h2{
+        font-size: 18px;
+    }
+}

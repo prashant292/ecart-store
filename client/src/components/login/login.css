@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.login-btn{
+    background-color: rgba(162, 162, 162, 0.29);
+    position: absolute;
+    top: 12vh;
+    left: 20vw;
+    z-index: 5;
+    display: none;
+    border: 2px solid rgb(2, 157, 74);
+    width: 60vw;
+    height: 76vh;
+    
+    box-shadow: 2px 2px 2px 7px rgba(203, 203, 203, 0.404);
+    border-radius: 2px;
+}
+.login-btn #cancel-login{
+    position: absolute;
+    top: -10px;
+    right: -30px;
+    font-weight: 400;
+    font-size: 30px;
+    text-shadow: 2px 2px 3px 5px rgba(206, 206, 206, 0.498);
+    cursor: pointer;
+    color: rgb(2, 157, 74);
+}
+.login-none{
+    display: block;
+}
+.login-btn .login-page{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.left-login{
+    border-radius: 2px 0 0 2px;
+    height: 100%;
+    background-color:#2874f0;
+    width: 40%;
+    padding: 35px 25px;
+    text-align: left;
+}
+.left-login h2{
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+}
+.left-login p{
+    margin-top: 15px;
+    font-size: 19px;
+    line-height: 1.2;
+}
+.left-login h1{
+    color: white;
+    margin-top: 95%;
+}
+.left-login h1 span{
+    color: red;
+}
+.right-login{
+
+    border-radius: 0 2px 2px 0;
+    background-color: white;
+    height: 100%;
+    width: 60%;
+    padding: 25px;
+    text-align: left;
+}
+.right-login input{
+    width: 100%;
+    border-bottom: 2px solid rgb(2, 157, 74);
+    margin-top: 7%;
+    padding: 10px 0px 5px 1px;
+
+}
+.right-login input::placeholder{
+    position: relative;
+    transition: all 0.3s;
+
+}
+.right-login input:hover::-webkit-input-placeholder{
+    transform: translateY(-10px);
+}
+.right-login p{
+    color: gray;
+    text-align: center;
+    margin-top: 30px;
+    cursor:auto;
+}
+.right-login .term{
+
+    font-size: 11px;
+    text-align: left;
+}
+.right-login button{
+    width: 100%;
+    padding: 13px 0px;
+    box-shadow: 1px 1px 1px 2px rgba(188, 188, 188, 0.374);
+    border-radius: 2px;
+    margin-top: 18px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.right-login .btn-login{
+    background-color: rgb(157, 2, 2);
+    color: white;
+}
+.right-login .new-login{
+    cursor: pointer;
+    color: orange;
+}
+.right-login .error{
+    margin: 5px 0px;
+    padding: 0;
+    color:red;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 600;
+}
